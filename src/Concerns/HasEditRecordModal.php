@@ -23,11 +23,6 @@ trait HasEditRecordModal
 
     protected string $editModalCancelButtonLabel = 'Cancel';
 
-    public function mount(): void
-    {
-        $this->form->fill();
-    }
-
     public function recordClicked(int | string $recordId, array $data): void
     {
         $this->editModalRecordId = $recordId;
